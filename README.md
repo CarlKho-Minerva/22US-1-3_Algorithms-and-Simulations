@@ -1,8 +1,12 @@
-# CarlKho-Minerva--22US-1-3_Algorithms-and-Simulations
+# Algorithms and Simulations
 
-# Randomized Nearest Neighbor Algorithm + 2-Opt Swap
+### Note from Carl
 
-This is a Python module that contains several functions for solving the traveling salesman problem (TSP) using a randomized nearest neighbor algorithm followed by a 2-opt optimization algorithm. Here's a brief description of each function:
+This assignment and class gave me a sense of accomplishment. The optional TSP algorithm implementation challenged me to convert my deceptively-simple flowchart into code. However, seeing the Randomized Nearest Algorithm together with the 2-opt swap optimize my solution was worthwhile. It taught me to read documentation and forums diligently. Explaining Euler's method in the context of the SIR model also demystified the daunting world of calculus while helping me develop a more solid understanding of differential equations. I am so excited to apply this understanding to other areas of life.
+
+## Randomized Nearest Neighbor Algorithm + 2-Opt Swap
+
+This is a Python code that contains several functions for solving the traveling salesman problem (TSP) using a randomized nearest neighbor algorithm followed by a 2-opt optimization algorithm. Here's a brief description of each function:
 
 calculate_distance(city1, city2): Calculates the Euclidean distance between two cities given their coordinates.
 
@@ -39,3 +43,13 @@ run_tsp(cities, num_iterations)
 ```
 
 This will run the TSP algorithm on a list of 5 cities with their coordinates (0,0), (1,1), (2,2), (3,3), and (4,4), for 1000 iterations of the 2-opt optimization algorithm.
+
+## Euler's Method
+
+This is a Python code for simulating the spread of an infectious disease using the SIR model and Euler's method. The code starts with importing the required libraries numpy and matplotlib. The code then sets font size and figure size for visualizations using matplotlib.
+
+Next, the code defines a function named "SIR_Euler" that simulates the spread of a disease using the SIR model and Euler's method. The function takes four parameters: transmission rate, recovery rate, a list of initial values for S, I, and R, and the end time of the simulation. The function calculates the number of time steps and creates arrays to store the values of S, I, and R for each time step. The initial values for S, I, and R are set, and the total population size is calculated.
+
+The function then iterates over each time step and calculates the new values for S, I, and R based on the SIR model equations. The function then generates a plot of S, I, and R over time using the matplotlib library.
+
+The main code sets the parameters for Quezon City's outbreak using national statistics data, calls the "SIR_Euler" function to run, and generates a plot of S, I, and R over time. The x-axis represents time in days, and the y-axis represents the size of the population in each compartment (S, I, or R).
